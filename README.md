@@ -15,9 +15,11 @@
 | 下载内容 | 入口 | 用途 |
 | --- | --- | --- |
 | 雾光壁纸 | [Steam 创意工坊：订阅壁纸](https://steamcommunity.com/sharedfiles/filedetails/?id=3815178380) | 在 Wallpaper Engine 中下载并应用 |
-| 雾光音乐助手 | [GitHub Releases 下载](https://github.com/ahuisaikou-creator/Foglight-Music-Desktop/releases/latest) | 下载 `Foglight-Music-Assistant-1.0.0-Setup.exe`，安装音乐联动助手 |
-| 助手备用下载 | [百度网盘下载](https://pan.baidu.com/s/1FXg3WWNoa7gJCXGrEHNEdQ?pwd=tjvm) · 提取码 **tjvm** | GitHub 下载不便时使用；文件名同上 |
+| 雾光音乐助手 | [GitHub Releases 下载](https://github.com/ahuisaikou-creator/Foglight-Music-Desktop/releases/latest) | 下载 `Foglight-Music-Assistant-1.0.1-Setup.exe`，安装音乐联动助手 |
+| 旧版备用下载 | [百度网盘下载 1.0.0](https://pan.baidu.com/s/1FXg3WWNoa7gJCXGrEHNEdQ?pwd=tjvm) · 提取码 **tjvm** | 网盘当前仍是旧版；推荐下载 GitHub 的 1.0.1 |
 | 详细使用说明 | [查看图文教程](使用说明.md) | 安装、设置、自定义壁纸和常见问题 |
+
+想维护本项目或了解如何跟随仓库更新，可看[本地与 GitHub 同步说明](同步与更新.md)。
 
 **首次使用只需三步：**
 
@@ -72,7 +74,7 @@
 
 ## 数据与更新
 
-助手通过本机连接与壁纸通信，读取系统媒体状态、网易云本地播放队列和系统主音量；会向音乐平台公共接口请求歌曲信息及歌词，不要求输入音乐账号密码，也不上传播放记录。
+助手通过本机连接与壁纸通信，读取系统媒体状态、网易云本地播放队列和系统主音量；会向音乐平台公共接口请求歌曲信息及歌词，不要求输入音乐账号密码，也不上传播放记录。1.0.1 在 Windows 媒体接口暂时无响应时会重试，并尝试从网易云窗口与本地队列恢复歌曲、封面和歌单；此时播放进度与逐句歌词可能暂不可用。
 
 自定义背景、歌词缓存和日志保存在本机用户目录。壁纸通过创意工坊更新，助手通过 Releases 单独更新。安装包当前未做代码签名，可用发布附件中的 `SHA256SUMS.txt` 核对下载文件。
 
