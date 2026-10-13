@@ -10,13 +10,15 @@
 
 > 截图为实际使用效果。背景、歌曲封面及文字随你的选择和正在播放的歌曲变化；展示中的歌曲不随安装包提供。
 
+> 最新助手：**1.0.2（2026-10-13）**，增加登录延迟启动、异常恢复和一键恢复连接。[查看更新日志](RELEASE_NOTES.md)。
+
 ## 下载与开始使用
 
 | 下载内容 | 入口 | 用途 |
 | --- | --- | --- |
 | 雾光壁纸 | [Steam 创意工坊：订阅壁纸](https://steamcommunity.com/sharedfiles/filedetails/?id=3815178380) | 在 Wallpaper Engine 中下载并应用 |
-| 雾光音乐助手 | [GitHub Releases 下载](https://github.com/ahuisaikou-creator/Foglight-Music-Desktop/releases/latest) | 下载 `Foglight-Music-Assistant-1.0.1-Setup.exe`，安装音乐联动助手 |
-| 旧版备用下载 | [百度网盘下载 1.0.0](https://pan.baidu.com/s/1FXg3WWNoa7gJCXGrEHNEdQ?pwd=tjvm) · 提取码 **tjvm** | 网盘当前仍是旧版；推荐下载 GitHub 的 1.0.1 |
+| 雾光音乐助手 | [GitHub Releases 下载](https://github.com/ahuisaikou-creator/Foglight-Music-Desktop/releases/latest) | 下载 `Foglight-Music-Assistant-1.0.2-Setup.exe`，安装音乐联动助手 |
+| 旧版备用下载 | [百度网盘下载 1.0.0](https://pan.baidu.com/s/1FXg3WWNoa7gJCXGrEHNEdQ?pwd=tjvm) · 提取码 **tjvm** | 网盘当前仍是旧版；推荐下载 GitHub 的 1.0.2 |
 | 详细使用说明 | [查看图文教程](使用说明.md) | 安装、设置、自定义壁纸和常见问题 |
 
 想维护本项目或了解如何跟随仓库更新，可看[本地与 GitHub 同步说明](同步与更新.md)。
@@ -28,6 +30,16 @@
 3. 打开网易云音乐或 QQ 音乐，开始播放歌曲。
 
 壁纸和助手是两部分：**订阅壁纸不会自动安装助手。** 不安装助手也可以使用时钟和内置背景；音乐信息、歌词、系统音量控制和自定义壁纸库需要助手运行。
+
+## 开机启动与连接恢复
+
+安装时默认勾选“登录 Windows 后启动音乐联动助手”。1.0.2 通过当前用户的计划任务，在登录后延迟约 15 秒启动；可以在托盘菜单关闭或重新开启。
+
+助手异常退出或服务长时间无响应时，后台启动器会有限次重试。托盘主动选择“退出助手”会正常退出，不会强制重新打开。系统媒体接口暂时没有歌曲、音乐暂停或客户端未启动，不会被当作助手崩溃。
+
+持续显示“正在连接本地联动服务…”时，可从开始菜单打开 **雾光 - 恢复连接**；安装时勾选“创建桌面快捷方式”后，桌面也有恢复入口。它只重启同一安装目录下的雾光助手，不会关闭音乐客户端或其他占用端口的程序。
+
+升级助手无需重新导入壁纸。1.0.2 的安装包、自启任务、恢复入口及异常重启已在开发机验证；真正重启后的登录自启和其他电脑尚待验证。
 
 ## 它能帮你解决什么
 
